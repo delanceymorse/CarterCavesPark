@@ -7,6 +7,7 @@ Carter Caves State Resort Park is located within Carter County, Kentucky. It has
 *Location of Carter Caves State Resort Park*
 
 ![Carter Caves Natural Bridge](NB.jpg)
+
 [*Natural Bridge at Carter Caves*](https://nohomejustroam.com/4-natural-bridges-in-1-day-at-carter-caves-state-resort-park-in-kentucky/)
 
 Carter Caves is often overlooked because of its location. Even people living in the area do not frequently visit the Park. It has many different things to offer. In hopes of shedding light to an area that is often underserved, this webage was created. 
@@ -17,6 +18,7 @@ Carter Caves is often overlooked because of its location. Even people living in 
 [Link to high-resolution version](Shaded.pdf)
 
 ![Kayaking on Tygarts Creek](tygarts.jpg)
+
 [*Kayaking on Tygarts Creek*](https://www.herald-dispatch.com/features_entertainment/carter-caves-tygarts-creek-trips-among-parks-growing-adventure-offerings/article_8ae81033-3b3c-5a9e-a7d8-4d0a1de4db96.html)
 
 Within the boundary of Carter Caves, there is a locally popluar creek that runs through it. If you live in Carter County, you or someone you know has been swimming in Tygarts Creek. Here is a map showing the elevation surrounding the portion of Tygarts Creek that runs through Carter Caves. 
