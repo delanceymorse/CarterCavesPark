@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Presentation</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet" />
+  <style>
+    /* Set margin/padding to fit border in box model */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Define styles on body (and all descendants) */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: rgb(32, 32, 32);
+      background-color: rgb(236, 232, 228);
+    }
+
+    /* Define styles for the headings */
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 10px 0;
+      padding: 0;
+      color: rgb(0, 0, 0);
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Define styles for the paragraph */
+    p {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+
+    a:link,
+    a:visited {
+      color: rgb(12, 73, 34);
+    }
+
+    a:hover {
+      color: rgb(86, 86, 86);
+      text-decoration: none;
+    }
+
+    section {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    footer {
+      width: 80%;
+      margin: 0 auto;
+      color: rgb(100, 100, 100);
+    }
+
+    iframe {
+      border: 1px solid rgb(200, 200, 200);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .caption {
+      font-size: 0.8rem;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+      color: rgb(100, 100, 100);
+    }
+
+    .title {
+      text-align: left;
+      margin: 20px;
+    }
+
+    /* Set up a container for the two columns */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    /* Define styles for the left column */
+    .left-column {
+      flex-basis: 40%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Define styles for the right column */
+    .right-column {
+      flex-basis: 55%;
+      background-color: rgba(255, 255, 255, 0.35);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Round image corners for images inside the right-column */
+    .right-column img {
+      border-radius: 10px;
+    }
+
+    /* Media query for small screens */
+    /* For screens up to 768px, apply these rules. */
+    @media (max-width: 768px) {
+
+      /* Change to a single column layout */
+      .container {
+        flex-direction: column;
+      }
+
+      /* Set full width for both columns */
+      .left-column,
+      .right-column {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <!-- 💡💡💡 Cesium map: paste embed code below -->
+    <iframe title="Carter Caves" width="100%" height="576" src="https://ion.cesium.com/stories/viewer/?id=8a724fd1-c553-42db-a3cb-7a3cb49c7d7c" frameborder="0" allow="fullscreen" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <!-- 💡💡💡 Cesium map: paste embed code above -->
+    <p class="caption">Interactive lidar map. </p>
+    <div class="title">
+      <h1>Buried in White Trash</h1>
+      <h2>A hidden gem admist rural Eastern Kentucky</h2>
+    </div>
+    <div class="container">
+      <div class="left-column">
+        <h3>A History</h3>
+        <p>
+          Carter Caves State Resort Park is located in Carter County Kentucky.
+          It was dedicated as a nature preserve in 1981 to protect three different endangered species - 
+          the Indiana bat, mountain maple, and Canada yew. It is also home to more caves than
+          anywhere else in Kentucky! There are many different walking trails, some more strenuous than outhers.
+          It does, however, offer plenty of trails and attractions for wilderness beginners, even for very
+          young children! There is golfing, camping, and lodge. They offer year-round cave tours, and even have 
+          two caves that you can take a self-guided tour in. All-in-all, it is not a state park that you
+          want to overlook!  
+        </p>
+
+        <p>
+          The goal of this project is to visualize the area in hopes of shedding some light
+          on this wonderful State Park. Carter Caves is often overlooked because it sits amongst
+          and underserved community, but it provides multiple different purposes, such as recreation and education. 
+        </p>
+
+        <p>
+          Visualizations created from lidar data provided by
+          <a href="https://kyfromabove.ky.gov/">KyFromAbove</a> in ArcGIS Pro and
+          Blender. Additional sources of information from
+          <a href="https://kyraster.ky.gov">kyraster.ky.gov</a>, April, 2023.
+        </p>
+
+        <p>
+          Page and visualizations created by Delancey Morse for GEO 409, Department of
+          Geography, University of Kentucky. Spring 2024.
+        </p>
+
+
+      </div>
+      <div class="right-column">
+        <h3>Maps for Carter Caves </h3>
+        <img src="Shaded.jpg" alt="A custom shaded relief map for Carter Caves" width="100%" />
+        <p class="caption">Custom shaded relief using Blender</p>
+        <img src="TCelev.jpg" alt="An elevation gradient for Tygarts Creek" width="100%" />
+        <p class="caption">Elevation gradient surrounding Tygarts Creek </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <hr />
+    <img src="logo-color-400px.png" alt="UKy Arts and Sciences  " width="300px">
+
+  </footer>
+</body>
+
+</html>
